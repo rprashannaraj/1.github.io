@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .add-new {
+    float:right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 10px;
+  }
+  .add-new i {
+    margin-right: 6px;
+  }
+
+.form-popup {
+  display: none;
+  position: fixed;
+  width: 697px;
+  bottom: 15%;
+  right: 20%;
+  left: 25%;
+  border: 10px solid #f1f1f1;
+  z-index: 2;
+  background-color: #f2f2f2;
+} 
+
+.form-container {
+  width: 230px;
+  margin-top:-1.4%;
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 14px;
+  margin-right:-910%;
+  margin-left:-2%;
+  width: 670px;
+}
+
+.form-container h4 {
+  margin-left:7px;
+  text-align: center;
+  padding-top: 5%;
+  color: white;
+  font-style: unset;
+}
+
+
+
+
+.container input[type=text], select, textarea {
+  width: 20%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-transform: capitalize;
+}
+.container input[type=number], select, textarea {
+  width: 20%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-transform: capitalize;
+}
+
+.container input[type=submit] {
+  background-color: lightgreen;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30%;
+}
+
+.container input[type=submit]:hover {
+  background-color: green;
+  transition: 1s;
+}
+.cancel:hover{
+  color: red;
+  transition: 0.5s;
+}
+.cancel{
+  margin-top:-130%;
+  margin-left:95%;
+  font-size:24px;
+  background-color: black;
+  color: white;
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}  
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color:#fff;
+    border: 2px solid rgb(252, 249, 249);
+    border-radius:2px;
+    align-content: stretch;
+  }
+  .flex-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    border-radius: 2px;
+    flex-wrap:wrap;
+  }
+  
+  .flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: rgb(255, 30, 41);
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 600px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+    .form-popup {
+      display: none;
+      position:fixed;
+      width: 357px;
+      bottom: 95px;
+      right: 20px;
+      left: 10px;
+      border: 10px solid #f1f1f1;
+      /* z-index: 2; */
+      background-color: #f2f2f2;
+    } 
+
+    .container{
+      max-width: 120%;
+      display: flex;
+      flex-wrap: wrap;
+      
+      height: 70%;
+      justify-content: space-between;
+      padding: 10px 10px;
+    }
+
+    .form-container {
+      width: 300px;
+      margin-top:-77%;
+      margin-bottom: -100%;
+      background-color: black;
+      /* left: -25%; */ 
+    }
+    .form-container h4 {
+      margin-left:7px;
+      text-align: center;
+      padding-top: 5%;
+      color: white;
+      font-style: unset;
+    }
+
+
+
+
+    .my1{
+      font-size: 17px;
+      margin-left:11px;
+      /* display:flex; */
+    }  
+.dl{
+  left: 10%;
+}
+
+
+    .cancel{
+      margin-bottom:273%;
+      margin-top: -290%;
+      margin-left:295px;
+      font-size:24px;
+      background-color: black;
+      color: red;
+    }
+
+    .container input[type=text], select, textarea {
+      width: 318px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      resize: vertical;
+      text-transform: capitalize;
+    }
+    .container input[type=number], select, textarea {
+      width: 318px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      text-transform: capitalize;
+    }
+    
+.op{
+  width: 288px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+    .container input[type=submit] {
+      background-color: lightgreen;
+      color: white;
+      padding: 12px 40px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 30%;
+    }
+    
+  }
+   
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    flex :1px solid gray ;
+    border: 2px solid  rgb(252, 249, 249);
+    padding: 10px;
+    border-radius:25px;
+  }
+ .flex> div {
+    background-color:#fff;
+    width: 110px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    border-radius: 20px;
+    flex-wrap:wrap;
+  }
+  body {
+    padding: 20px;
+}
+input {
+    margin-bottom: 5px; 
+    padding: 2px 3px; 
+    width: 209px;
+}
+td {
+    padding: 4px; 
+    border: 1px #CCC solid;
+     width: 100px;
+    }
+.flexbox{
+     display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    flex :1px solid gray ;
+    border: 2px solid  rgb(252, 249, 249);
+    padding: 10px;
+    border-radius:25px;
+    }
+.flextable{
+        border-radius: 25px;
+        border: 2px solid  rgb(252, 249, 249);
+    }
+    .card1{
+      background: linear-gradient(to bottom right, #66ccff 12%, #ffffff 100%);
+      
+    }
+    .card2{
+      background: linear-gradient(to right, #99ffcc 12%, #00cc99 93%);
+    }
+    .card3{
+      background: linear-gradient(to left, #ff6666 22%, #ffffff 93%);
+
+    }
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+    .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+      }
+      
+      .pagination a.active {
+        background-color: #ecb581;
+        color: white;
+      }
+      
+.table-title {
+        padding-bottom: 10px;
+        margin: 0px 0px 10px;
+      }
+.table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+      }
+.table-title .add-new {
+        float:right;
+        height: 30px;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: none;
+        min-width: 100px;
+        border-radius: 50px;
+        line-height: 10px;
+      }
+.table-title .add-new i {
+        margin-right: 6px;
+     }
+table.table {
+        table-layout: fixed;           
+    }
+table.table th i {
+        font-size: 13px;
+        margin: auto;
+        cursor: pointer;
+      }
+table.table th:last-child {
+        width: 100px;
+      }
+table.table td a {
+        cursor: pointer;
+        display: inline-block;
+        margin:auto;
+        min-width: 24px;
+    }
+table.table td a.add {
+        color: #27C46B;
+    }
+table.table td a.edit {
+        color: #FFC107;
+    }
+table.table td a.delete {
+        color: #E34724;
+    }
+table.table td i {
+        font-size: 19px;
+    }
+table.table td a.add i {
+        font-size: 24px;
+        margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }
+table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+        
+    }
+table.table .form-control.error {
+        border-color: #f50000;
+    }
+table.table td .add {
+        display: none;
+    }
